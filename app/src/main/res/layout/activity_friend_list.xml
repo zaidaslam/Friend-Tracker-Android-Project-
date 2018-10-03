@@ -1,0 +1,64 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:id="@+id/header"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorAccent">
+    </LinearLayout>
+
+    <Button
+    android:layout_below="@+id/header"
+    android:id="@+id/btnPickContact"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:onClick="pickContact"
+    android:text="Pick Contact"
+    android:layout_centerHorizontal="true"
+    android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:id="@+id/btnMeetingList"
+        android:layout_below="@+id/btnPickContact"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Meeting List"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+    <ListView
+        android:layout_marginTop="20dp"
+        android:id="@+id/list"
+        android:layout_below="@+id/btnMeetingList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <Button
+        android:layout_below="@+id/list"
+        android:id="@+id/dummy"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="suggestNearestFriend"
+        android:text="Suggest Now"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+
+    <Button
+        android:layout_below="@+id/list"
+        android:id="@+id/settings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Settings"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5dp"/>
+
+</RelativeLayout>
+
